@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+            <Button
+                android:id="@+id/btn_reset_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test" />
+
+            <!--最基本的圆-->
+            <com.commodity.myviewdemo.CircleProgressBar.DialProgress
+                android:id="@+id/circle_progress_bar1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                app:antiAlias="true"
+                app:arcColors="@array/gradient_arc_color"
+                app:arcWidth="@dimen/normal"
+                app:bgArcColor="@color/colorAccent"
+                app:bgArcWidth="@dimen/small"
+                app:hint="截止当前已走"
+                app:hintSize="15sp"
+                app:maxValue="10000"
+                app:startAngle="180"
+                app:sweepAngle="180"
+                app:unit="步"
+                app:unitSize="5sp"
+                app:value="10000"
+                app:valueSize="10sp" />
+
+        <com.commodity.myviewdemo.CircleProgressBar.WaveProgress
+        android:id="@+id/wave_progress_bar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        app:darkWaveAnimTime="4000"
+        app:darkWaveColor="@color/dark"
+        app:lightWaveAnimTime="5000"
+        app:lightWaveColor="@color/light"
+        app:lightWaveDirect="R2L"
+        app:lockWave="false"
+        app:valueSize="35dp"
+        app:waveHeight="30dp"
+        app:waveNum="1" />
+        </LinearLayout>
